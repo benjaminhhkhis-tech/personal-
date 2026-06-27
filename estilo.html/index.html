@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="temas.css">
+</head>
+<body>
+    <main class="contenedor">
+        
+        <section class="login-crad" id="logincard">
+            <h1>Inicio de sesión</h1>
+            <p class="descripción">Ingrese sus credenciales para acceder al sistema</p>
+            
+            <form id="formLogin">
+                <div class="grupo">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="Usuario" placeholder="Ingrese su usuario">
+                    <small id="errorUsuario" class="error"></small>
+                </div>
+                
+                <div class="grupo">
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" placeholder="Ingrese su contraseña">
+                    <small id="errorClave" class="error"></small>
+                </div>
+                
+                <div class="opciones">
+                    <label> 
+                        <input type="checkbox" id="mostrarClave">
+                        Mostrar contraseña
+                    </label>
+                </div>
+                
+                <button type="submit">Ingresar</button>
+                <p id="mensajeGeneral" class="Mensaje"></p>
+           
+               </section> escoja una de las proporcione en la Bienvenido 
+         
+              <section class="panel control oculto" id="panelBienvenida">
+              <h2>Acceso concedido</h2>
+              <p>Bienvenido/a, <strong id="nombreUsuario"></strong></p>
+              <button id="btnCotraseña">Cerrar sesión</button>
+               </section>
+
+               <select>
+             <option value="seleccion"></option>
+              <option value="Admin">Administrador</option>
+              <option value="Estudiante">Estudiante</option>
+              <option value="docente">docente</option>
+             </select>
+            </form>
+
+        
+         
+    </main>
+
+    <script src="class.js"></script>
+</body>
+</html>

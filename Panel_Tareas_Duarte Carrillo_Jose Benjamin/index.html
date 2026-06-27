@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panel de tareas </title>
+    <link rel="stylesheet" href="style.cs">
+</head>
+<body>
+    <main class="contenedor">
+        <h1> app de gsetion d etaraeas de una libreria  </h1>
+        <p class="descripcion">
+          ESTA APP PERMITE CREAR UN LISTADO PARA QUE NO OLVIDE NADA 
+        </p>
+        
+        <section class="formulario">
+            <h2>Registrar nueva tarea</h2>
+            <form id="formTarea">
+                <label for="tarea">Nombre de la tarea:</label>
+                <input type="text" id="tarea" placeholder="Ejemplo: Crear menú principal">
+                
+                <label for="responsable">Responsable:</label>
+                <input type="text" id="responsable" placeholder="Nombre del responsable">
+                
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad">
+                    <option value="">Seleccione una prioridad</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+                
+                <button type="submit">Agregar tarea</button>
+            </form>
+            <p id="mensaje"></p>
+        </section>
+
+        <section class="listado">
+            <div class="encabezado-tabla">
+                <h2>Tareas registradas</h2>
+                <p class="meta-tareas">Total de tareas: <span id="contador">0</span></p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarea</th>
+                        <th>Responsable</th>
+                        <th>Prioridad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaTareas">
+                    </tbody>
+            </table>
+
+            <button id="btnLimpiar" class="btn-peligro">Limpiar todas las tareas</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <form class="text" id="tarea">
+        <h5>porfavor ingrese su contraseña</h5>
+        <label for="password">
+            <input type="number">
+
+            <button id="boton.tarea">ingresar</button>
+            <h3>en estat pagina poodmos encontrar lo que gusten en diferentes 
+                categorias 
+            </h3>
+        </label>
+    </form>
+   
+
+        
+
+    
+</body>
+</html>
